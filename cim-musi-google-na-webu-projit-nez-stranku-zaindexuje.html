@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Čím musí Google na webu projít, než stránku zaindexuje | SEO v praxi</title>
+<meta name="description" content="Majitel posuzuje web podle toho, jak vypadá v prohlížeči. Google ho poznává jinak: robot Googlebot přichází po odkazech, ptá se serveru na každou adresu">
+<link rel="canonical" href="https://davidvacek1.github.io/seo-v-praxi/cim-musi-google-na-webu-projit-nez-stranku-zaindexuje.html">
+<style>*{box-sizing:border-box}body{font-family:Georgia,'Times New Roman',serif;line-height:1.7;color:#1f2328;background:#f8f9fa;margin:0}
+.wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+header.site{border-bottom:2px solid #1f4e79;padding-bottom:14px;margin-bottom:28px}
+header.site a{color:#1f4e79;text-decoration:none;font-weight:bold;font-size:1.05rem;letter-spacing:.02em}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em}
+h2{font-size:1.15rem;margin:1.8em 0 .4em;color:#1d2b3a}
+p{margin:0 0 1.1em}a{color:#1f5f99}ul{padding-left:1.2em}li{margin:.3em 0}
+nav.more{margin-top:44px;padding-top:20px;border-top:1px solid #dde3ea;font-size:.95rem}
+nav.more h2{font-size:1rem;color:#4a5a6a}nav.more ul{list-style:none;padding:0}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid #dde3ea;font-size:.85rem;color:#6b6b6b}
+@media(max-width:520px){h1{font-size:1.4rem}.wrap{padding:20px 16px 48px}}</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site"><a href="index.html">SEO v praxi</a></header>
+<article>
+<h1>Čím musí Google na webu projít, než stránku zaindexuje</h1>
+<p>Majitel posuzuje web podle toho, jak vypadá v prohlížeči. Google ho poznává jinak: robot Googlebot přichází po odkazech, ptá se serveru na každou adresu zvlášť a podle odpovědi rozhoduje, co si uloží. Dokumentace Googlu popisuje 3 fáze vyhledávání: procházení, indexování a zobrazení výsledků. Ne každá stránka projde všemi 3 fázemi a Google žádnou z nich nezaručuje, ani když web dodržuje jeho zásady.</p>
+<h2>Kudy robot na web přichází</h2>
+<p>Nové adresy Google podle své dokumentace objevuje 2 cestami: z odkazů na stránkách, které už zná, a ze sitemapy, kterou mu web předá. Na stránku, na kterou nevede žádný odkaz z vlastního webu ani zvenčí a která chybí v sitemapě, Googlebot nemá jak narazit. Mezi běžné důvody, proč Googlebot stránku neprojde, Google řadí potíže se serverem, výpadky sítě a pravidla v souboru robots.txt.</p>
+<p>Tyhle překážky ukáže až <a href="https://infosvet.eu/technologie/technicky-audit-webu-co-odhali-crawl-celeho-webu/">strojový průchod všemi stránkami webu</a>: program postupuje po odkazech podobně jako Googlebot a ke každé nalezené adrese zapíše odpověď serveru, kanonickou adresu a pokyny pro roboty.</p>
+<h2>Co server odpoví na každou adresu</h2>
+<p>Prvním údajem, který robot od serveru dostane, je třímístný stavový kód. Adresy s kódem 4xx (výjimkou je 429) Google neindexuje a ty, které už v indexu má, z něj odstraní. Při kódech 5xx a 429 Googlebot procházení dočasně zpomalí. Zaindexované stránky zpočátku zůstávají, při dlouhodobých chybách ale z indexu nakonec vypadnou. Googlebot sleduje nejvýš 10 přesměrování za sebou.</p>
+<p>Potíže dělá i kód, který neodpovídá obsahu. Když stránka napíše „nic jsme nenašli“ a server k tomu pošle kód 200, Search Console ji označí jako falešnou chybu 404. Kdy volit 301 a kdy 410 a jak zkrátit řetěz přesměrování, rozebírá <a href="https://pad.unistra.fr/p/seo-stavove-kody-http-a-presmerovani-v-praxi">průvodce stavovými kódy a přesměrováním</a>.</p>
+<h2>Sitemapa jako seznam doporučených adres</h2>
+<p>Sitemapa pomáhá Googlu adresy objevit, podle dokumentace ale nezaručuje, že je všechny projde a zaindexuje. Web do zhruba 500 stránek, na jehož důležité stránky se dá dojít odkazy z úvodní stránky, ji podle Googlu mít nemusí. Google doporučuje uvádět v ní adresy, které chcete vidět ve výsledcích hledání, tedy kanonické. Přesměrované adresy, chybové stránky a stránky s pravidlem noindex do ní proto nepatří; u noindexu by si sitemapa a stránka navíc odporovaly.</p>
+<p>Jak soubor sestavit a jak v Search Console poznat, kolik adres z něj Google opravdu zařadil do indexu, vysvětluje článek o tom, <a href="https://etherpad.mit.edu/p/seo-sitemapa-xml-co-do-ni-patri-a-jak-ji-cis">co do sitemapy XML patří</a>.</p>
+<h2>Když se mění adresy celého webu</h2>
+<p>Odkazy, stavové kódy i sitemapa se nejvíc prověří při migraci: změně domény, přechodu na HTTPS nebo novém redakčním systému s jinou strukturou adres. Google doporučuje trvalé přesměrování na straně serveru, tedy 301 nebo 308, z každé staré adresy na odpovídající novou. Dokumentace naopak varuje před tím, aby mnoho starých adres vedlo na jednu nesouvisející stránku, třeba na úvodní. Přesměrování radí držet co nejdéle, obecně alespoň 1 rok.</p>
+<p>K častým chybám migrace patří noindex nebo blokace v robots.txt, které po spuštění zůstanou z testovací verze. U noindexu platí jedna podmínka: robot ho uvidí, jen když stránku smí stáhnout. Pokud ji blokuje robots.txt, pravidlo k němu nedojde a adresa se ve výsledcích může objevit i tak, například přes odkazy z jiných stránek. Postup od soupisu starých adres po první týdny po spuštění popisuje návod na <a href="https://pad.elearning.uni-bremen.de/p/seo-migrace-webu-bez-ztraty-navstevnosti">přesun webu bez ztráty návštěvnosti</a>.</p>
+<p>Mimo migrace se vyplatí projít po každé větší úpravě webu všechny 3 oblasti: odkazy, stavové kódy a sitemapu. Přehled Indexování stránek v Search Console ukáže, které adresy Google do indexu nezařadil a z jakého důvodu, a crawl doplní, odkud na ně z webu vedou odkazy.</p>
+<p><strong>Zdroje k tématu:</strong> <a href="https://infosvet.eu/technologie/technicky-audit-webu-co-odhali-crawl-celeho-webu/">Technický audit webu: co odhalí crawl všech stránek</a> · <a href="https://pad.unistra.fr/p/seo-stavove-kody-http-a-presmerovani-v-praxi">Stavové kódy HTTP a přesměrování v praxi SEO</a> · <a href="https://etherpad.mit.edu/p/seo-sitemapa-xml-co-do-ni-patri-a-jak-ji-cis">Sitemapa XML: co do ní patří a jak ji číst v Search Console</a> · <a href="https://pad.elearning.uni-bremen.de/p/seo-migrace-webu-bez-ztraty-navstevnosti">Migrace webu bez ztráty návštěvnosti</a></p>
+</article>
+<nav class="more"><h2>Další témata</h2><ul><li><a href="data-o-webu-ktera-firma-davno-ma-jen-je-neotevira.html">Data o webu, která firma dávno má, jen je neotevírá</a></li><li><a href="proc-mistni-sluzba-potrebuje-jine-seo-nez-e-shop.html">Proč místní služba potřebuje jiné SEO než e-shop</a></li><li><a href="penzion-zahradnictvi-studio-a-e-shop-kde-se-jejich-seo-rozchazi.html">Penzion, zahradnictví, studio a e-shop: kde se jejich SEO rozchází</a></li><li><a href="jak-jedna-skupina-frazi-dojde-az-do-textu-stranky.html">Jak jedna skupina frází dojde až do textu stránky</a></li><li><a href="index.html">Všechna témata</a></li></ul></nav>
+<footer>Praktické poznámky k SEO pro malé firmy: vyhledávání, měření, obsah a technika webu.</footer>
+</div>
+</body>
+</html>

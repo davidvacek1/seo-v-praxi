@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jedna stránka, tři čtenáři: člověk, Googlebot a AI asistent | SEO v praxi</title>
+<meta name="description" content="Majitel firmy píše stránku pro zákazníka. Stejný text ale čtou ještě 2 stroje: robot Googlu, bez kterého se text stránky do výsledků hledání nedostane, a">
+<link rel="canonical" href="https://davidvacek1.github.io/seo-v-praxi/jedna-stranka-tri-ctenari-clovek-googlebot-a-ai-asistent.html">
+<style>*{box-sizing:border-box}body{font-family:Georgia,'Times New Roman',serif;line-height:1.7;color:#1f2328;background:#f8f9fa;margin:0}
+.wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+header.site{border-bottom:2px solid #1f4e79;padding-bottom:14px;margin-bottom:28px}
+header.site a{color:#1f4e79;text-decoration:none;font-weight:bold;font-size:1.05rem;letter-spacing:.02em}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em}
+h2{font-size:1.15rem;margin:1.8em 0 .4em;color:#1d2b3a}
+p{margin:0 0 1.1em}a{color:#1f5f99}ul{padding-left:1.2em}li{margin:.3em 0}
+nav.more{margin-top:44px;padding-top:20px;border-top:1px solid #dde3ea;font-size:.95rem}
+nav.more h2{font-size:1rem;color:#4a5a6a}nav.more ul{list-style:none;padding:0}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid #dde3ea;font-size:.85rem;color:#6b6b6b}
+@media(max-width:520px){h1{font-size:1.4rem}.wrap{padding:20px 16px 48px}}</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site"><a href="index.html">SEO v praxi</a></header>
+<article>
+<h1>Jedna stránka, tři čtenáři: člověk, Googlebot a AI asistent</h1>
+<p>Majitel firmy píše stránku pro zákazníka. Stejný text ale čtou ještě 2 stroje: robot Googlu, bez kterého se text stránky do výsledků hledání nedostane, a robot AI asistenta, který z ní může poskládat odpověď. Každý z nich může na stránce narazit na jiný problém. Proto se ji vyplatí kontrolovat v pořadí, v jakém se k ní dostanou: nejdřív roboti, pak člověk.</p>
+<h2>Smí se robot ke stránce dostat?</h2>
+<p>Ze stránky, kterou robot nestáhne, vyhledávač nezná text: ve výsledcích se nanejvýš objeví holá adresa bez popisu a asistent nemá z čeho poskládat odpověď. Google ve své dokumentaci k AI přehledům a Režimu AI uvádí, že pro ně neplatí žádné další technické podmínky. Stačí, aby stránka byla v indexu a mohla se ve výsledcích zobrazit s úryvkem textu. Mezi doporučeními zmiňuje i to, aby procházení povoloval soubor robots.txt a nebránila mu síť pro doručování obsahu (CDN) ani hosting.</p>
+<p>U ChatGPT má tuhle roli robot OAI-SearchBot. Podle OpenAI se web, který mu přístup zakáže, v odpovědích vyhledávání ChatGPT neukáže, nanejvýš jako navigační odkaz. Další roboty, měření citací a smysl souboru llms.txt rozebírá podrobněji text o tom, <a href="https://infosvet.eu/technologie/viditelnost-v-chatgpt-a-perplexity-co-se-da-ovlivnit-a-zmerit/">co ovlivňuje viditelnost v AI asistentech</a>.</p>
+<h2>Je text v kódu, který robot dostane?</h2>
+<p>Člověk v prohlížeči vidí hotovou stránku i tehdy, když ji teprve skripty v JavaScriptu poskládaly z dat. Google takovou stránku zpracuje ve 3 krocích: stáhne ji, v Chromiu bez grafického okna spustí skripty a do indexu uloží výsledek. Zároveň upozorňuje, že JavaScript neumí spustit všichni roboti, a vykreslení na serveru nebo předem doporučuje i proto, že web zrychlí.</p>
+<p>Robota, který JavaScript nespustí, na firemním webu typicky mine seznam poboček s otevírací dobou, který stránka dotahuje skriptem z externí služby, nebo recenze vložené cizím widgetem. Se stránkou navíc Google nijak neinteraguje, takže neuvidí ani obsah, který se načte až po kliknutí nebo posunutí. Google v doporučeních pro AI funkce radí mít podstatné informace na stránce jako text. Jak poznat, jakým způsobem web stránky skládá, a jak si ověřit, co robot opravdu dostane, popisuje průvodce <a href="https://etherpad.uni-due.de/p/seo-javascript-a-seo-vykreslovani-na-klientu">vykreslováním stránek na klientu a serveru</a>.</p>
+<h2>Pozná čtenář, komu má věřit?</h2>
+<p>Google autorům nabízí 3 otázky: kdo text napsal, jak vznikl a proč. K první patří jméno pod článkem, pokud ho tam návštěvník přirozeně hledá. U druhé se ptá, jestli je návštěvníkovi zřejmé, kde pomohla automatizace včetně generování umělou inteligencí. Pokud text vzniká hlavně kvůli návštěvnosti z vyhledávání, podle Googlu to nesedí s tím, co chtějí jeho systémy odměnit.</p>
+<p>Ze 4 vlastností, které Google shrnuje zkratkou E-E-A-T (zkušenost, odbornost, autorita, důvěryhodnost), označuje za nejdůležitější důvěryhodnost. Kolem zkratky koluje řada pověr, třeba že jde o samostatně měřený faktor pořadí. Které z tradovaných rad obstojí při srovnání s dokumentací, třídí článek <a href="https://etherpad.uni-osnabrueck.de/p/seo-uzitecny-obsah-a-hodnoceni-kvality-e-e-a">o hodnocení kvality obsahu bez mýtů</a>.</p>
+<p>Přísnější měřítko Google uplatňuje u oblastí, kde chybná rada může ohrozit zdraví, peníze nebo bezpečnost člověka, a říká jim YMYL (Your Money or Your Life). Na webu poradny nebo ordinace má proto čtenář poznat, jaké vzdělání má autor, z čeho tvrzení vychází a kdy autor obsah naposledy aktualizoval. Konkrétní úpravy pro web nutriční poradny ukazuje text o tom, <a href="https://jednozdravi.eu/web-poradny-o-zdravi-jak-google-posuzuje-odbornost/">jak Google posuzuje odbornost zdravotních webů</a>.</p>
+<h2>Kontrola stránky ve 4 krocích</h2>
+<p>1. Otevřete adresu domény s /robots.txt a hledejte řádky Disallow u Googlebotu, OAI-SearchBotu nebo u všech robotů (User-agent: *). 2. Ve zdrojovém kódu stránky v prohlížeči vyhledejte větu z otevírací doby nebo z recenzí. Když tam není, vkládá ji až skript. 3. U článku zkontrolujte jméno autora, datum poslední úpravy a odkazy na zdroje tvrzení. 4. Porovnejte strukturovaná data, tedy strojově čitelný popis stránky v kódu, s tím, co je na stránce vidět. Google ve stejných doporučeních pro AI funkce radí, aby si odpovídala.</p>
+<p>První 2 body obvykle platí pro celý web nebo celou šablonu najednou, takže jejich oprava se projeví na všech stránkách. Další 2 často vyžadují projít stránky jednotlivě.</p>
+<p><strong>Zdroje k tématu:</strong> <a href="https://infosvet.eu/technologie/viditelnost-v-chatgpt-a-perplexity-co-se-da-ovlivnit-a-zmerit/">Viditelnost v ChatGPT a Perplexity</a> · <a href="https://etherpad.uni-osnabrueck.de/p/seo-uzitecny-obsah-a-hodnoceni-kvality-e-e-a">Užitečný obsah a hodnocení kvality</a> · <a href="https://jednozdravi.eu/web-poradny-o-zdravi-jak-google-posuzuje-odbornost/">Web poradny o zdraví</a> · <a href="https://etherpad.uni-due.de/p/seo-javascript-a-seo-vykreslovani-na-klientu">JavaScript a SEO</a></p>
+</article>
+<nav class="more"><h2>Další témata</h2><ul><li><a href="co-na-webu-cte-google-kdyz-navstevnik-vidi-jen-hotovou-stranku.html">Co na webu čte Google, když návštěvník vidí jen hotovou stránku</a></li><li><a href="podle-ceho-majitel-firmy-pozna-ze-seo-spoluprace-bezi.html">Podle čeho majitel firmy pozná, že SEO spolupráce běží</a></li><li><a href="jak-jedna-skupina-frazi-dojde-az-do-textu-stranky.html">Jak jedna skupina frází dojde až do textu stránky</a></li><li><a href="co-proverit-nez-zacnete-web-posilovat-odkazy.html">Co prověřit, než začnete web posilovat odkazy</a></li><li><a href="index.html">Všechna témata</a></li></ul></nav>
+<footer>Praktické poznámky k SEO pro malé firmy: vyhledávání, měření, obsah a technika webu.</footer>
+</div>
+</body>
+</html>

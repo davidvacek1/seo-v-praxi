@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Co na webu čte Google, když návštěvník vidí jen hotovou stránku | SEO v praxi</title>
+<meta name="description" content="Návštěvník webu vidí fotky, menu a text. Vyhledávač prochází totéž přes kód a v něm leží tři vrstvy, kterých si majitel obvykle nevšimne: kudy mezi">
+<link rel="canonical" href="https://davidvacek1.github.io/seo-v-praxi/co-na-webu-cte-google-kdyz-navstevnik-vidi-jen-hotovou-stranku.html">
+<style>*{box-sizing:border-box}body{font-family:Georgia,'Times New Roman',serif;line-height:1.7;color:#1f2328;background:#f8f9fa;margin:0}
+.wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+header.site{border-bottom:2px solid #1f4e79;padding-bottom:14px;margin-bottom:28px}
+header.site a{color:#1f4e79;text-decoration:none;font-weight:bold;font-size:1.05rem;letter-spacing:.02em}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .6em}
+h2{font-size:1.15rem;margin:1.8em 0 .4em;color:#1d2b3a}
+p{margin:0 0 1.1em}a{color:#1f5f99}ul{padding-left:1.2em}li{margin:.3em 0}
+nav.more{margin-top:44px;padding-top:20px;border-top:1px solid #dde3ea;font-size:.95rem}
+nav.more h2{font-size:1rem;color:#4a5a6a}nav.more ul{list-style:none;padding:0}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid #dde3ea;font-size:.85rem;color:#6b6b6b}
+@media(max-width:520px){h1{font-size:1.4rem}.wrap{padding:20px 16px 48px}}</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site"><a href="index.html">SEO v praxi</a></header>
+<article>
+<h1>Co na webu čte Google, když návštěvník vidí jen hotovou stránku</h1>
+<p>Návštěvník webu vidí fotky, menu a text. Vyhledávač prochází totéž přes kód a v něm leží tři vrstvy, kterých si majitel obvykle nevšimne: kudy mezi stránkami vedou odkazy, která jazyková verze patří kterému čtenáři a co obrázky znamenají slovy. Chyba v kterékoli z nich na pohled nic nerozbije. Google ale pak některé stránky nenajde, ukáže čtenáři špatnou jazykovou verzi nebo nepozná, co je na obrázku.</p>
+<h2>Odkazy jako mapa, podle které robot chodí</h2>
+<p>Google v dokumentaci uvádí, že odkazy mu slouží k objevování nových stránek a jako signál, jak stránky souvisejí s tématem. Adresu přitom spolehlivě vytáhne jen z HTML prvku `&lt;a&gt;` s atributem `href`. Rozbalovací menu nevadí, pokud jsou jeho položky v kódu obyčejné odkazy. Když je ale položka jen tlačítko, které na další stránku přesměruje až skript, lidem menu funguje a robot přesto do části webu nedojde.</p>
+<p>Dokumentace doporučuje, aby každá stránka, na které vám záleží, měla odkaz aspoň z jedné jiné stránky webu. Snadno se to přehlédne u stránky, kterou posíláte zákazníkům v e-mailu nebo na ni míří placená reklama. Působí, že je „na webu“, robot k ní ale po odkazech nedojde. Hloubku kliknutí, osiřelé stránky a stavbu tematických skupin rozebírá text o tom, <a href="https://alumni.bowdoin.edu/reunion/page.aspx?pid=1111&amp;dgs6717=3&amp;tid6717=61597">jak navrhnout odkazy mezi stránkami a strukturu webu</a>.</p>
+<h2>Komu patří česká a komu slovenská verze</h2>
+<p>Firma, která prodává i na Slovensko, mívá dvě verze téže stránky. Značky hreflang Googlu říkají, pro koho je která. Jazyk stránky Google rozpozná z jejího obsahu, hreflang ani atribut `lang` k tomu nebere. Když šablona slovenské verze nechá menu a tlačítka česky, má stránka dva jazyky, a Google radí držet jeden.</p>
+<p>Častá chyba je párování jen z jedné strany: Google píše, že když na sebe dvě stránky neodkazují navzájem, značky ignoruje. Stane se to třeba, když někdo přidá slovenskou kategorii, značku vloží jen do ní a česká stránka o protějšku neví. Podobně se přehlédne přepínač jazyka: Google doporučuje odkazovat na jiné jazykové verze dané stránky, přepínač ale někdy vede jen na slovenskou úvodní stránku. Kódy jazyků, hodnotu x-default a vztah ke kanonickým adresám vysvětluje průvodce <a href="https://etherpad.studicloud.uni-rostock.de/p/seo-hreflang-pro-ceske-a-slovenske-weby">značkami hreflang pro česko-slovenské e-shopy</a>.</p>
+<h2>Co obrázek sděluje slovy</h2>
+<p>Co obrázek ukazuje, Google podle dokumentace pozná z počítačového vidění, obsahu stránky a alternativního textu (`alt`), který označuje za nejdůležitější atribut k popisu obrázku. Ve výpisu kategorie e-shopu bývá náhled produktu zároveň odkazem na detail a Google u obrázku v odkazu bere `alt` jako text odkazu. Prázdný `alt` u náhledu tedy znamená odkaz, který Googlu o cílové stránce nic neřekne. Opačná chyba je `alt` napěchovaný hledanými frázemi, který podle dokumentace může působit jako spam.</p>
+<p>Druhé slepé místo bývá posuvná galerie na úvodní stránce. Některé šablony do ní vkládají fotky jako pozadí přes CSS a takové obrázky Google neindexuje. Jak volit popis podle účelu obrázku, jaké formáty používat a co načítat až později, shrnuje článek o <a href="https://etherpad.studiumdigitale.uni-frankfurt.de/p/seo-obrazky-v-seo-alt-text-formaty-a-nacitan">alternativním textu, formátech a načítání obrázků</a>.</p>
+<h2>Kdy se tyhle vrstvy kontrolují</h2>
+<p>Na pohled tyto vrstvy nepoznáte, odhalí je až program, který web projde po odkazech a čte kód. Jeden takový průchod (crawl), u webu na dvou doménách oběma, najednou vypíše jednostranné značky hreflang i obrázky bez alternativního textu. Když se jeho seznam adres porovná se sitemapou a se stránkami ze Search Console, ukáže i stránky, na které žádný odkaz nevede. Proto patří do vstupního auditu, než se začnou vybírat témata a psát texty.</p>
+<p>Ne každý řádek výstupu je chyba: dekorativní ikona má mít prázdný `alt` záměrně. Před zadáním oprav se vyplatí projít pár typických adres v nástroji Kontrola adresy URL v Google Search Console. Ukáže kód stránky tak, jak ho Googlebot načetl, a živý test přidá snímek vykreslené stránky. Kam audit spadá v prvních 4 týdnech a co z něj majitel dostane písemně, popisuje článek <a href="https://respektinstitut.cz/jak-vypada-prvni-mesic-spoluprace-se-seo-konzultantem/">o prvním měsíci spolupráce týden po týdnu</a>.</p>
+<p>Zadání pro vývojáře bude přehlednější, když v něm nálezy seřadíte podle vrstev: u odkazů menu a výpisy, u jazykových verzí hlavička stránky a přepínač, u obrázků šablona galerie a alt texty u produktů.</p>
+<p><strong>Zdroje k tématu:</strong> <a href="https://alumni.bowdoin.edu/reunion/page.aspx?pid=1111&amp;dgs6717=3&amp;tid6717=61597">Interní prolinkování a architektura webu</a> · <a href="https://etherpad.studicloud.uni-rostock.de/p/seo-hreflang-pro-ceske-a-slovenske-weby">Hreflang pro české a slovenské weby</a> · <a href="https://etherpad.studiumdigitale.uni-frankfurt.de/p/seo-obrazky-v-seo-alt-text-formaty-a-nacitan">Obrázky v SEO</a> · <a href="https://respektinstitut.cz/jak-vypada-prvni-mesic-spoluprace-se-seo-konzultantem/">První měsíc se SEO konzultantem</a></p>
+</article>
+<nav class="more"><h2>Další témata</h2><ul><li><a href="podle-ceho-majitel-firmy-pozna-ze-seo-spoluprace-bezi.html">Podle čeho majitel firmy pozná, že SEO spolupráce běží</a></li><li><a href="jak-jedna-skupina-frazi-dojde-az-do-textu-stranky.html">Jak jedna skupina frází dojde až do textu stránky</a></li><li><a href="cim-musi-google-na-webu-projit-nez-stranku-zaindexuje.html">Čím musí Google na webu projít, než stránku zaindexuje</a></li><li><a href="jedna-stranka-tri-ctenari-clovek-googlebot-a-ai-asistent.html">Jedna stránka, tři čtenáři: člověk, Googlebot a AI asistent</a></li><li><a href="index.html">Všechna témata</a></li></ul></nav>
+<footer>Praktické poznámky k SEO pro malé firmy: vyhledávání, měření, obsah a technika webu.</footer>
+</div>
+</body>
+</html>
